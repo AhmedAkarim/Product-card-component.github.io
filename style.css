@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    background-color: white;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 50px auto;
+    max-width: 700px;
+    column-gap: 10px;
+    /* max-height: 800px; */
+    grid-template-rows: repeat(7, 1fr);
+}
+
+.product-pic {
+    grid-column: 1 / 8;
+    grid-row: 1 / -1;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    overflow: hidden;
+}
+
+.short-heading-first {
+    font-family: 'Montserrat', sans-serif;
+    color:hsl(228, 12%, 48%);
+    opacity: 0.8;
+    letter-spacing: 10px;
+    grid-column: 8 / span 2;
+    align-self: center;
+    padding-left: 22px;
+}
+
+.header-main {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    grid-column: 8 / 12;
+    /* grid-row: ; */
+    padding-left: 22px;
+    grid-row: 2 / 4;
+    align-self: flex-start;
+    justify-self: center;
+    letter-spacing: 0.5px;
+}
+
+.product-description {
+    font-size: 14px;
+    color:hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    grid-column: 8 / 12;
+    padding-left: 22px;
+    align-self: flex-start;
+    grid-row: 4 / 6;
+    line-height: 2;
+}
+
+
+
+.price-actual {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    grid-row: 6 / 7;
+    grid-column: 8 / 11;
+    align-self: center;
+    justify-self: center;
+    padding-left: 22px;
+
+}
+
+.price-previous {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    color:hsl(228, 12%, 48%);
+    font-size: medium;
+    grid-row: 6 / 7;
+    grid-column: 11 / 12;
+    align-self: center;
+    justify-self: center;
+    padding-left:6px;
+    opacity: 0.7;
+}
+
+.add-to-cart {
+    background-color: hsl(158, 36%, 37%);
+    padding: 10px 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    grid-column: 8 / 13;
+    justify-self: center;
+    align-self: center;
+}
+
+.add-to-cart:hover {
+    background-color: hsl(159, 26%, 15%);
+}
+
+.icon-cart {
+    padding-right: 15px;
+}
+
